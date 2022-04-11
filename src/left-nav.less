@@ -1,0 +1,49 @@
+// main: style.less
+
+/* left-nav-overlay */
+.overlay {
+    .leftNavStyle();
+    width: 0;
+    z-index: 10;
+    position: fixed;
+    transition: .5s;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    & .closeBtn {
+        position: absolute;
+        top: 1px;
+        right: 23px;
+        font-size: 40px;
+        color: @grey;
+        display: block;
+        transition: .3s;
+
+        &:hover,
+        &:focus {
+            color: @white;
+        }
+    }
+}
+
+/* left-nav */
+.left-nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .overlay {
+        display: none;
+    }
+
+    .left-nav {
+        .leftNavStyle();
+        display: block;
+        min-height: 100vh;
+        width: 350px;
+        position: fixed;
+        // float: left !important;
+        z-index: 10;
+    }
+}

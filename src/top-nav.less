@@ -1,0 +1,77 @@
+// main: style.less
+
+/* top-nav */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: @black_one;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    & .logo a {
+        .logoStyle();
+    }
+
+    & .hamburger {
+        cursor: pointer;
+        font-size: 30px;
+        color: @white;
+    }
+
+    & .btn-block {
+        display: none;
+
+        & .register {
+            color: @white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+            transition: .1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        & .enter-btn button {
+            padding: 10px 40px;
+            border-radius: 20px;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 12px;
+            cursor: pointer;
+            background-color: @white;
+            transition: .1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        top: 0;
+        margin-left: 350px;
+        height: 84.4px;
+        background-color: @black_two;
+
+        justify-content: flex-end;
+        right: 0;
+
+        & .logo,
+        & .hamburger {
+            display: none;
+        }
+
+        & .btn-block {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
+

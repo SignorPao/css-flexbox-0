@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Palanquin
+- Font Author: Copyright 2014 Pria Ravichandran (pria.ravichandran@gmail.com)
+- Font Source: http://fonts.gstatic.com/s/palanquin/v11/9XUilJ90n1fBFg7ceXwUyn5oxJuqbi3ezg.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

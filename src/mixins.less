@@ -1,0 +1,74 @@
+// main: style.less
+
+/* mixins */
+.logoStyle {
+    font-weight: 900;
+    font-size: 0.9rem;
+    color: @white;
+}
+
+.linkStyle {
+    color: @grey;
+    display: block;
+    transition: .3s;
+}
+
+.leftNavStyle {
+    // height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: @black_one;
+    
+    
+
+    & .logo a {
+        .logoStyle();
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+
+    &-content {
+        position: relative;
+        top: 8%;
+        width: 100%;
+        text-align: left;
+        margin-top: 30px;
+        padding-left: 12px;
+
+        & a {
+            padding: 8px;
+            .linkStyle();
+            font-weight: 700;
+
+            &.linkActive {
+                color: @white;
+            }
+
+            &:hover,
+            &:focus {
+                color: @white;
+            }
+        }
+    }
+
+    & .footer-content {
+        position: relative;
+        top: 48%;
+        padding-left: 20px;
+
+        // align-self: flex-end;
+
+
+        & a {
+            .linkStyle();
+            font-size: 0.8rem;
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+}
